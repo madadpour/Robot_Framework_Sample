@@ -8,9 +8,10 @@ ${Message}        \
 ${Username}       \
 ${Password}       \
 
+
 *** Test Cases ***
 TC_01
-    Open Excel Document    C:/Windows/System32/Sample/testData/login.xlsx    login.xlsx
+    Open Excel Document    C:/Windows/System32/Robot_Framework_Sample/testData/login.xlsx    login.xlsx
     ${Username}    Read Excel Cell    2    1    login
     ${Password}    Read Excel Cell    2    2    login
     Log To Console    ${Username}
